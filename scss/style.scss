@@ -1,0 +1,480 @@
+@import 'settings.scss';
+
+// ------------
+// 全体構造
+//-------------
+body{
+  background-image: url(../images/bg-image.png);
+  background-color: #fff;
+  color: black;
+  font-size: 20px;
+  font-family: 'Vibur','Yusei Magic','ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+.back-top {
+  position: fixed;
+  bottom: 3%;
+  right: 5%;
+  display: none;
+  z-index: 1;
+ }
+
+ .hamburger-button{
+   display: none;
+ }
+
+ //  サイトに動きをつける
+ .parallax {
+  opacity: 0;
+  position: relative;
+  top: 50px;
+ }
+ .parallax.on {
+  opacity: 1;
+  top: 0;
+ }
+ 
+ .parallax-left {
+  opacity: 0;
+  position: relative;
+  right: 50px;
+ }
+ .parallax-left.on {
+  opacity: 1;
+  right: 0;
+ }
+
+ .parallax-right {
+  opacity: 0;
+  position: relative;
+  left: 50px;
+ }
+ .parallax-right.on {
+  opacity: 1;
+  left: 0;
+ }
+
+
+ // ------------
+ // ヘッダー
+ //-------------
+ header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+   .title{
+    text-align: center;
+    padding-top: 80px;
+   }
+   h1{
+    font-size: 60px;
+    font-weight: bolder
+   }
+   .pc-nav{
+   ul{
+     @include row;
+     @include width1200;
+     }
+    }
+}
+
+// ------------
+// メイン
+//-------------
+main{
+  margin-bottom: 100px;
+  .header-image img{
+    width: 100%;
+    height: 350px;
+    margin-bottom: 100px;
+  }
+  h3{
+    text-align: center;
+  }
+  h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+.main{
+  @include width1200;
+  margin-bottom: 60px;
+   ul{
+    @include row;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    width: 700px;
+    margin: -50px auto 50px auto;
+    padding: 10px;
+     li{
+      list-style-type: none;
+     }
+      li.last{
+      border-right: 3px dashed #EEFF00;
+      }
+     a{
+      display: inline-block;
+      @include row;
+      width: 220px;
+      padding: 10px 20px;
+      border-left: 3px dashed #EEFF00;
+      text-decoration: none;
+      }
+      p{
+        text-align: center;
+       }
+  }
+}
+
+// ------------
+// フッター
+//-------------
+footer{
+  .pc-footer{
+    img{
+      width: 100%;
+      height: 500px;
+      margin: 0 auto;    
+    }
+  }
+  .res-footer{
+    display: none
+  }
+}
+
+// ------------
+// トップ
+//-------------
+.therapist{
+  @include width1200;
+  @include main;
+  background-color: $base-color;
+  .name{
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    br{
+      display: none;
+    }
+  }
+  .therapist-contents{
+    @include row;
+    .therapist-left{
+      width: 630px;
+      h3{
+        width: 420px;
+        display: inline-block;
+        text-align: center;
+        font-size: 30px;
+        border-bottom: 2px solid #000;
+        margin-bottom: 30px;
+        .blue-font{
+          font-weight: bolder;
+          font-size: 40px;
+          color: $main-color;
+        }
+      }
+      p{
+        text-align: left;
+        line-height: 1.6;
+      }
+    }
+  }
+  .therapist-pximage{
+    width: 420px;
+    height: 440px;
+    margin-top: 30px;
+  }
+}
+
+.massage{
+  @include width1200;
+  @include main;
+  background-color: $accent-color;
+  .massage-contents{
+    display: flex;
+    justify-content: center;
+    .sentence{
+      width: 440px;
+     h3{
+      font-size: 40px;
+      display: inline-block;
+      margin-bottom: 30px;
+     }
+     p{
+      padding: 0 25px;
+      text-align: left;
+      line-height: 1.6;
+     }
+    }
+    .left-images{
+      width: 290px;
+      .big{
+        padding: 50px 100px 50px 0px;
+      }
+    }
+    .right-images{
+      width: 290px;
+      .big{
+        padding: 50px 0px 50px 100px;
+      }
+    }
+    .responsive-images{
+      display: none
+    }
+  }
+}
+
+.perfect{
+  @include width1200;
+  @include main;
+  background-color: #fff;
+   h3{
+     font-size: 30px;
+     margin-bottom: 50px;
+   }
+  .blue-font{
+    font-weight: bolder;
+    font-size: 40px;
+    color: $main-color;
+  }
+  p{
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  .perfect-images{
+    img{
+      margin: 0 15px
+    }
+  }
+}
+
+// --------------
+// メニュー・料金
+//---------------
+.menu-contents{
+  @include center;
+  @include width1200;
+  img{
+    width: 50%;
+  }
+  .moji{
+    width: 50%;
+    height: 310px;
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 25px;
+    line-height: 1.6;
+    border: 1px solid #000;
+    h3{
+      font-size: 30px;
+      text-align: left;
+    }
+    p{
+      font-size: 15px;
+      width: 465px;
+      text-align: left;
+      margin: 20px auto;
+    }
+    a{
+      width: 70px;
+      height: 50px;
+      color: #fff;
+      display: inline-block;
+      background-color: $main-color;
+      border-radius: 10px;
+      text-decoration: none;
+      padding-top: 10px;
+      margin-left: 400px;
+    }
+  }
+  .moji-360{
+    width: 50%;
+    height: 360px;
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 25px;
+    line-height: 1.6;
+    border: 1px solid #000;
+    h3{
+      font-size: 30px;
+      text-align: left;
+    }
+    p{
+      font-size: 15px;
+      width: 465px;
+      text-align: left;
+      margin: 10px auto;
+    }
+    a{
+      width: 70px;
+      height: 50px;
+      color: #fff;
+      display: inline-block;
+      background-color: $main-color;
+      border-radius: 10px;
+      text-decoration: none;
+      padding-top: 10px;
+      margin-left: 400px;
+    }
+  }
+}
+
+
+// --------------
+// アクセス
+//---------------
+.access{
+  @include row;
+  width: 1200px;
+  height: 660px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 50px 50px;
+  h3{
+    width: 480px;
+    text-align: left;
+    border-bottom: 3px dotted #EEFF00;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+  p{
+    margin-bottom: 50px;
+    line-height: 1.6;
+  }
+  iframe{
+    width: 480px;
+    height: 380px;
+  }
+}
+
+// --------------
+// ブログ
+//---------------
+.blog{
+  @include width1200;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 100px 50px;
+  margin-bottom: 100px;
+  .contents{
+    width: 700px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #000;
+  }
+  .list{
+    h3{
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      color: #2404FC;
+    }
+    li{
+      margin-bottom: 30px;
+      list-style-type: none;
+      border-bottom: 3px dashed #EEFF00;
+      padding-bottom: 10px;
+      width: 270px;
+
+    }
+    a{
+      text-decoration: none;
+      color: #000;
+      font-size: 15px;
+    }
+    a:hover{
+      color: #bbb;
+    }
+  }
+}
+
+// --------------
+// お問い合わせ
+//---------------
+.sns{
+  @include width1200;
+  @include info;
+  p{
+    text-align: center;
+  }
+  img{
+    display: block;
+    margin: 30px auto;
+  }
+  .botan{
+    @include center;
+    justify-content: space-between;
+    width: 280px;
+    margin: 0 auto;
+  }
+}
+
+.form{
+  @include width1200;
+  @include info;
+  margin-bottom: 100px;
+  padding: 30px;
+  h3{
+    br{
+      display: none;
+    }
+  }
+  .contents{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+  .item{
+    width: 980px;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 20px;
+    label{
+      display: block;
+      width: 330px;
+      text-align: left;
+      padding: 15px 0 0 100px;
+    }
+    input{
+      width: 500px;
+      height: 60px;
+      background-color: $accent-color;
+      border: 1px solid #000;
+      border-radius: 10px;
+      font-size: 20px;
+    }
+    textarea{
+      width: 600px;
+      height: 260px;
+      background-color: $accent-color;
+      border: 1px solid #000;
+      border-radius: 10px;
+      font-size: 20px;
+    }
+   }
+  }
+   .submit{
+     text-align: center;
+     input{
+      background-color: #2404FC;
+      color: #fff;
+      font-size: 15px;
+      width: 110px;
+      height: 40px;
+      border: none;
+      border-radius: 10px;
+     }
+    }
+    p{
+      text-align: center;
+      margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,49 @@
+$main-color: #00E5FF;
+$accent-color: #F5F1E5;
+$base-color: #fff;
+
+
+@mixin center(){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@mixin width1200(){
+  width: 1200px;
+  margin: 0 auto;
+}
+
+@mixin row(){
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin main {
+  border-radius: 10px;
+  padding: 50px;
+  text-align: center;
+  .small-logo{
+    margin: 0 auto 30px auto;
+  }
+}
+
+@mixin info{
+  background-color: $accent-color;
+  overflow: hidden;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  h3{
+    width: 420px;
+    height: 60px;
+    color: #fff;
+    background-color: $main-color;
+    font-size: 30px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 10px;
+    margin: 30px auto;
+  }
+}

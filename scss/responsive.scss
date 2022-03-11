@@ -1,0 +1,388 @@
+@import 'settings.scss';
+
+@media screen and (max-width:480px) {
+  /* ナビゲーションの非表示 */
+  header{
+   .pc-nav {
+    display: none;
+   }
+  }
+
+ /* -------------------
+  全体構造
+ ------------------ */
+ /* 幅の調整 */
+ main{
+  width: auto;
+ }
+
+ /* コンテンツ */
+ main{
+   display: block;
+ }
+
+ .main{
+   width: auto;
+   ul{
+     width: auto;
+     img{
+       width: 20px;
+     }
+     a{
+       width: auto;
+       font-size: 11px;
+     }
+   }
+ }
+
+ img{
+  max-width: 100%;
+ }
+ .back-top {
+   display: none !important;
+ }
+
+
+ /* -------------------
+  ヘッダー
+ ------------------- */
+ .title{
+   margin-top: -50px;
+   h1{
+   font-size: 30px;
+   font-weight: bolder;
+   }
+   p{
+     font-size: 15px;
+   }
+  }
+
+
+  /* ハンバーガーメニュー */
+  .hamburger-button path {
+    fill: #fff;
+  }
+  /* メニューボタン */
+  .hamburger-button {
+    background-color: #0182be;
+    display: flex;
+    border-radius: 5px;
+  }
+
+  /* ナビゲーション */
+  /* 高さの変更とかもここが担当 */
+ .hamburger-nav {
+   background-color: rgba($color: #00E5FF, $alpha: 0.7);
+   height: 100vh;
+   ul{
+     text-align: center;
+     }
+ }
+
+ /* -------------------
+  メイン
+ ------------------- */
+ main{
+  .header-image img{
+    height: 200px;
+    margin-bottom: 30px;
+  }
+  h3{
+    text-align: center;
+  }
+  h2{
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+ }
+
+ /* -------------------
+  フッター
+ ------------------- */
+ footer{
+  .pc-footer{
+   display: none;
+   }
+   .res-footer{
+     display: block;
+     width: 100%;
+     background-color: #fff;
+     position: fixed;
+     bottom: 0;
+     left: 0;
+     ul{
+      display: flex;
+      justify-content: space-between;
+      li{
+        list-style-type: none;
+      }
+     img{
+       width: 75px;
+       height: 60px;
+     }
+     i{
+       width: 60px;
+       height: 60px;
+       margin: 0 auto;
+       color: #fff;
+       text-align: center;
+       line-height: 60px;
+       background-color: $main-color;
+     }
+    }
+   }
+ }
+
+ // ------------
+ // トップ
+ //-------------
+ .therapist{
+  width: auto;
+  .small-logo img{
+    width: 100px;
+  }
+  .name{
+    font-size: 15px;
+    br{
+      display: inline;
+    }
+  }
+  .therapist-contents{
+    display: inline;
+    .therapist-left{
+    width: auto;
+    h3{
+      width: auto;
+      font-size: 20px;
+     .blue-font{
+      font-size: 25px;
+     }
+    }
+    p{
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+   }
+  }
+ }
+ .massage{
+   width: auto;
+   .small-logo img{
+    width: 100px;
+  }
+   .massage-contents{
+     display: inline;
+     .left-images{
+       display: none;
+     }
+     .right-images{
+       display: none;
+     }
+     .sentence{
+       width: auto;
+       h3{
+         font-size: 20px;
+       }
+       p{
+         font-size: 15px;
+         margin-bottom: 30px;
+       }
+     }
+     .responsive-images{
+       width: auto;
+       display: inline-block;
+       display: flex;
+       justify-content: space-between;
+       img{
+         width: 80px;
+       }
+     }
+   }
+ }
+ .perfect{
+   width: auto;
+   padding: 0;
+   .small-logo img{
+    width: 100px;
+    padding-top: 50px;
+  }
+  h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .blue-font{
+    font-size: 25px;
+  }
+  p{
+    font-size: 15px;
+    padding: 0 80px;
+  }
+  .perfect-images{
+    display: flex;
+    img{
+      width: 120px;
+      margin: 0 auto;
+    }
+  }
+ }
+
+ // ------------
+ // メニュー
+ //-------------
+ .menu-contents{
+   display: block;
+   width: auto;
+   img{
+     display: none;
+   }
+   .moji{
+     width: auto;
+     height: auto;
+     padding: 20px;
+     h3{
+       font-size: 15px;
+     }
+     p{
+       font-size: 15px;
+       width: auto;
+     }
+     a{
+       display: block ;
+       margin: auto;
+     }
+   }
+   .moji-360{
+     width: auto;
+     height: auto;
+     padding: 20px;
+     h3{
+      font-size: 15px;
+    }
+     p{
+      font-size: 15px;
+      width: auto;
+    }
+    a{
+      display: block;
+      margin: auto;
+    }
+  }
+ }
+
+ // --------------
+ // アクセス
+ //---------------
+ .access{
+   display: block;
+   width: auto;
+   height: auto;
+   margin: 0 10px;
+   padding: 30px 10px;
+   h3{
+     width: auto;
+   }
+   iframe{
+     width: auto;
+   }
+ }
+
+ // --------------
+ // ブログ
+ //---------------
+ .blog{
+   width: auto;
+   display: block;
+   padding: 20px;
+   .contents{
+     width: auto;
+     margin-bottom: 30px;
+   }
+   .list{
+     text-align: center;
+     margin-bottom: 50px;
+     h3{
+       font-size: 20px;
+     }
+     li{
+       margin: 10px auto;
+       a{
+         text-align: left;
+       }
+     }
+   }
+  }
+
+ // --------------
+ // お問い合わせ
+ //---------------
+ .sns{
+   width: auto;
+   margin: 0 10px;
+   h3{
+     width: auto;
+     height: auto;
+     color: #fff;
+     background-color: $main-color;
+     font-size: 20px;
+     text-align: center;
+     border-radius: 10px;
+     margin: 30px 20px;
+   }
+   p{
+     font-size: 15px;
+   }
+   .botan{
+     width: auto;
+     display: flex;
+     justify-content: center;
+     img{
+       display: block;
+       width: 50px;
+       margin: 20px;
+     }
+   }
+ }
+ .form{
+   width: auto;
+   margin: 0 10px;
+   h3{
+     width: auto;
+     height: auto;
+     color: #fff;
+     background-color: $main-color;
+     font-size: 20px;
+     text-align: center;
+     border-radius: 10px;
+     margin: 30px 20px;
+     line-height: 1.6;
+     br{
+       display: block;
+     }
+   }
+   p{
+     font-size: 15px;
+   }
+   .contents{
+   .item{
+     width: auto;
+     display: block;
+     label{
+       width: auto;
+       font-size: 15px;
+       display: block;
+       padding-left: 0;
+       padding-right: 20px;
+     }
+     input{
+       width: auto;
+       height: auto;
+     }
+     textarea{
+       width: auto;
+     }
+   }
+  }
+ }
+ 
+}

@@ -1,0 +1,364 @@
+@charset "UTF-8";
+@media screen and (max-width: 480px) {
+  /* ナビゲーションの非表示 */
+  header .pc-nav {
+    display: none;
+  }
+  /* -------------------
+  全体構造
+ ------------------ */
+  /* 幅の調整 */
+  main {
+    width: auto;
+  }
+  /* コンテンツ */
+  main {
+    display: block;
+  }
+  .main {
+    width: auto;
+  }
+  .main ul {
+    width: auto;
+  }
+  .main ul img {
+    width: 20px;
+  }
+  .main ul a {
+    width: auto;
+    font-size: 11px;
+  }
+  img {
+    max-width: 100%;
+  }
+  .back-top {
+    display: none !important;
+  }
+  /* -------------------
+  ヘッダー
+ ------------------- */
+  .title {
+    margin-top: -50px;
+  }
+  .title h1 {
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  .title p {
+    font-size: 15px;
+  }
+  /* ハンバーガーメニュー */
+  .hamburger-button path {
+    fill: #fff;
+  }
+  /* メニューボタン */
+  .hamburger-button {
+    background-color: #0182be;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 5px;
+  }
+  /* ナビゲーション */
+  /* 高さの変更とかもここが担当 */
+  .hamburger-nav {
+    background-color: rgba(0, 229, 255, 0.7);
+    height: 100vh;
+  }
+  .hamburger-nav ul {
+    text-align: center;
+  }
+  /* -------------------
+  メイン
+ ------------------- */
+  main .header-image img {
+    height: 200px;
+    margin-bottom: 30px;
+  }
+  main h3 {
+    text-align: center;
+  }
+  main h2 {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  /* -------------------
+  フッター
+ ------------------- */
+  footer .pc-footer {
+    display: none;
+  }
+  footer .res-footer {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+  footer .res-footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .res-footer ul li {
+    list-style-type: none;
+  }
+  footer .res-footer ul img {
+    width: 75px;
+    height: 60px;
+  }
+  footer .res-footer ul i {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+    background-color: #00E5FF;
+  }
+  .therapist {
+    width: auto;
+  }
+  .therapist .small-logo img {
+    width: 100px;
+  }
+  .therapist .name {
+    font-size: 15px;
+  }
+  .therapist .name br {
+    display: inline;
+  }
+  .therapist .therapist-contents {
+    display: inline;
+  }
+  .therapist .therapist-contents .therapist-left {
+    width: auto;
+  }
+  .therapist .therapist-contents .therapist-left h3 {
+    width: auto;
+    font-size: 20px;
+  }
+  .therapist .therapist-contents .therapist-left h3 .blue-font {
+    font-size: 25px;
+  }
+  .therapist .therapist-contents .therapist-left p {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .massage {
+    width: auto;
+  }
+  .massage .small-logo img {
+    width: 100px;
+  }
+  .massage .massage-contents {
+    display: inline;
+  }
+  .massage .massage-contents .left-images {
+    display: none;
+  }
+  .massage .massage-contents .right-images {
+    display: none;
+  }
+  .massage .massage-contents .sentence {
+    width: auto;
+  }
+  .massage .massage-contents .sentence h3 {
+    font-size: 20px;
+  }
+  .massage .massage-contents .sentence p {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+  .massage .massage-contents .responsive-images {
+    width: auto;
+    display: inline-block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .massage .massage-contents .responsive-images img {
+    width: 80px;
+  }
+  .perfect {
+    width: auto;
+    padding: 0;
+  }
+  .perfect .small-logo img {
+    width: 100px;
+    padding-top: 50px;
+  }
+  .perfect h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .perfect .blue-font {
+    font-size: 25px;
+  }
+  .perfect p {
+    font-size: 15px;
+    padding: 0 80px;
+  }
+  .perfect .perfect-images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .perfect .perfect-images img {
+    width: 120px;
+    margin: 0 auto;
+  }
+  .menu-contents {
+    display: block;
+    width: auto;
+  }
+  .menu-contents img {
+    display: none;
+  }
+  .menu-contents .moji {
+    width: auto;
+    height: auto;
+    padding: 20px;
+  }
+  .menu-contents .moji h3 {
+    font-size: 15px;
+  }
+  .menu-contents .moji p {
+    font-size: 15px;
+    width: auto;
+  }
+  .menu-contents .moji a {
+    display: block;
+    margin: auto;
+  }
+  .menu-contents .moji-360 {
+    width: auto;
+    height: auto;
+    padding: 20px;
+  }
+  .menu-contents .moji-360 h3 {
+    font-size: 15px;
+  }
+  .menu-contents .moji-360 p {
+    font-size: 15px;
+    width: auto;
+  }
+  .menu-contents .moji-360 a {
+    display: block;
+    margin: auto;
+  }
+  .access {
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 0 10px;
+    padding: 30px 10px;
+  }
+  .access h3 {
+    width: auto;
+  }
+  .access iframe {
+    width: auto;
+  }
+  .blog {
+    width: auto;
+    display: block;
+    padding: 20px;
+  }
+  .blog .contents {
+    width: auto;
+    margin-bottom: 30px;
+  }
+  .blog .list {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .blog .list h3 {
+    font-size: 20px;
+  }
+  .blog .list li {
+    margin: 10px auto;
+  }
+  .blog .list li a {
+    text-align: left;
+  }
+  .sns {
+    width: auto;
+    margin: 0 10px;
+  }
+  .sns h3 {
+    width: auto;
+    height: auto;
+    color: #fff;
+    background-color: #00E5FF;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 30px 20px;
+  }
+  .sns p {
+    font-size: 15px;
+  }
+  .sns .botan {
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sns .botan img {
+    display: block;
+    width: 50px;
+    margin: 20px;
+  }
+  .form {
+    width: auto;
+    margin: 0 10px;
+  }
+  .form h3 {
+    width: auto;
+    height: auto;
+    color: #fff;
+    background-color: #00E5FF;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 30px 20px;
+    line-height: 1.6;
+  }
+  .form h3 br {
+    display: block;
+  }
+  .form p {
+    font-size: 15px;
+  }
+  .form .contents .item {
+    width: auto;
+    display: block;
+  }
+  .form .contents .item label {
+    width: auto;
+    font-size: 15px;
+    display: block;
+    padding-left: 0;
+    padding-right: 20px;
+  }
+  .form .contents .item input {
+    width: auto;
+    height: auto;
+  }
+  .form .contents .item textarea {
+    width: auto;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
